@@ -49,7 +49,7 @@ npm run push
 
 ##### 1-3. GAS エディタでの設定
 
-GAS エディタ（https://script.google.com/）で以下を行います:
+GAS エディタ（https://script.google.com/） で以下を行います:
 
 1. **API キーの設定**: プロジェクトの設定 > スクリプトプロパティ に `API_KEY` を追加し、任意の文字列を設定
 2. **初期化の実行**: エディタで `initializeSheet` 関数を選択して実行（ヘッダー行と統計シートが作成されます）
