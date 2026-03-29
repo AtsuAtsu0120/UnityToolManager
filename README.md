@@ -63,21 +63,29 @@ GAS エディタ（https://script.google.com/）で以下を行います:
 
 以下のいずれかの方法でパッケージをインストールします。
 
-**方法 A: Package Manager から追加**
+**方法 A: Package Manager から Git URL で追加（推奨）**
 
 1. Unity で Window > Package Manager を開く
-2. 左上の **+** > **Add package from disk...** を選択
-3. `UnityToolManager_Unity/Packages/jp.atsuatsu.toolmanager/package.json` を選択
+2. 左上の **+** > **Add package from git URL...** を選択
+3. 以下の URL を入力:
+
+```
+https://github.com/AtsuAtsu0120/UnityToolManager.git?path=UnityToolManager_Unity/Packages/jp.atsuatsu.toolmanager
+```
+
+特定のバージョンを指定する場合はタグを付けます:
+
+```
+https://github.com/AtsuAtsu0120/UnityToolManager.git?path=UnityToolManager_Unity/Packages/jp.atsuatsu.toolmanager#v0.0.1
+```
 
 **方法 B: manifest.json に直接追加**
 
 対象プロジェクトの `Packages/manifest.json` の `dependencies` に以下を追加します:
 
 ```json
-"jp.atsuatsu.toolmanager": "file:path/to/UnityToolManager_Unity/Packages/jp.atsuatsu.toolmanager"
+"jp.atsuatsu.toolmanager": "https://github.com/AtsuAtsu0120/UnityToolManager.git?path=UnityToolManager_Unity/Packages/jp.atsuatsu.toolmanager#v0.0.1"
 ```
-
-※ パスは対象プロジェクトの `Packages/` ディレクトリからの相対パスで指定してください。
 
 ### 3. Unity の設定
 
