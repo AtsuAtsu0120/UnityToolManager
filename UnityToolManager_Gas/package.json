@@ -1,0 +1,13 @@
+{
+  "name": "unity-tool-manager-gas",
+  "version": "1.0.0",
+  "description": "Google Apps Script for UnityToolManager",
+  "scripts": {
+    "build": "tsc && cp appsscript.json dist/",
+    "push": "npm run build && clasp push"
+  },
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.83",
+    "typescript": "^6.0.2"
+  }
+}

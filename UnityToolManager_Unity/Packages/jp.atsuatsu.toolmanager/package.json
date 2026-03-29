@@ -1,0 +1,11 @@
+{
+  "name": "jp.atsuatsu.toolmanager",
+  "version": "0.0.1",
+  "displayName": "Unity Tool Manager",
+  "description": "Unity Tool Manager",
+  "unity": "2019.1",
+  "author": {
+    "name": "KAIDO Atsuya",
+    "email": "kaido_atsuya@atsuatsu.dev"
+  }
+}
