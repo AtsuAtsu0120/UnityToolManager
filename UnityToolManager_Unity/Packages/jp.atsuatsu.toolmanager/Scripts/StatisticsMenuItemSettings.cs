@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
 
-namespace Generators
+namespace UnityToolManager
 {
   [FilePath("ProjectSettings/StatisticsMenuItemSettings.asset", FilePathAttribute.Location.ProjectFolder)]
   internal class StatisticsMenuItemSettings : ScriptableSingleton<StatisticsMenuItemSettings>

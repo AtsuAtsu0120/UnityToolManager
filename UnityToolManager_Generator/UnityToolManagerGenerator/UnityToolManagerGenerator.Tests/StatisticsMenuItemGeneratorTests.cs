@@ -12,7 +12,7 @@ namespace TestNamespace;
 
 public static partial class MyTools
 {
-    [Generators.StatisticsMenuItem(""Tools/Statistics/Reset"")]
+    [UnityToolManager.StatisticsMenuItem(""Tools/Statistics/Reset"")]
     public static void ResetStats() { }
 }";
 
@@ -20,15 +20,16 @@ public static partial class MyTools
 
 using UnityEditor;
 
-namespace TestNamespace;
-
-partial class MyTools
+namespace TestNamespace
 {
-    [MenuItem(""Tools/Statistics/Reset"")]
-    public static void ResetStats_MenuItem()
+    partial class MyTools
     {
-        Generators.StatisticsMenuItemHelper.SendStatistics(""ResetStats"");
-        ResetStats();
+        [MenuItem(""Tools/Statistics/Reset"")]
+        public static void ResetStats_MenuItem()
+        {
+            UnityToolManager.StatisticsMenuItemHelper.SendStatistics(""ResetStats"");
+            ResetStats();
+        }
     }
 }
 ";
@@ -61,10 +62,10 @@ namespace TestNamespace;
 
 public static partial class StatsWindow
 {
-    [Generators.StatisticsMenuItem(""Tools/Statistics/Show"")]
+    [UnityToolManager.StatisticsMenuItem(""Tools/Statistics/Show"")]
     public static void ShowStats() { }
 
-    [Generators.StatisticsMenuItem(""Tools/Statistics/Clear"")]
+    [UnityToolManager.StatisticsMenuItem(""Tools/Statistics/Clear"")]
     public static void ClearStats() { }
 }";
 
@@ -72,21 +73,22 @@ public static partial class StatsWindow
 
 using UnityEditor;
 
-namespace TestNamespace;
-
-partial class StatsWindow
+namespace TestNamespace
 {
-    [MenuItem(""Tools/Statistics/Show"")]
-    public static void ShowStats_MenuItem()
+    partial class StatsWindow
     {
-        Generators.StatisticsMenuItemHelper.SendStatistics(""ShowStats"");
-        ShowStats();
-    }
-    [MenuItem(""Tools/Statistics/Clear"")]
-    public static void ClearStats_MenuItem()
-    {
-        Generators.StatisticsMenuItemHelper.SendStatistics(""ClearStats"");
-        ClearStats();
+        [MenuItem(""Tools/Statistics/Show"")]
+        public static void ShowStats_MenuItem()
+        {
+            UnityToolManager.StatisticsMenuItemHelper.SendStatistics(""ShowStats"");
+            ShowStats();
+        }
+        [MenuItem(""Tools/Statistics/Clear"")]
+        public static void ClearStats_MenuItem()
+        {
+            UnityToolManager.StatisticsMenuItemHelper.SendStatistics(""ClearStats"");
+            ClearStats();
+        }
     }
 }
 ";

@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace Generators                                                                                                                                                                                   
+namespace UnityToolManager                                                                                                                                                                                   
 {                                                                          
   public static class StatisticsMenuItemHelper
   {
