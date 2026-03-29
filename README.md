@@ -90,7 +90,7 @@ GAS エディタ（https://script.google.com/）で以下を行います:
 統計を取りたいメニュー項目に属性を付ける
 
 ```csharp
-using Generators;
+using UnityToolManager;
 
 public static partial class MyTools
 {
