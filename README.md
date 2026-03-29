@@ -2,7 +2,7 @@
 
 ## Statistic Menu Item
 
-(作成されるスプレットシートの例)[https://docs.google.com/spreadsheets/d/1dqgByrGq2vYK1x7tkGbEgcMhoYUEyd-pzUwIzJ2APN0/edit?usp=sharing]
+[作成されるスプレットシートの例](https://docs.google.com/spreadsheets/d/1dqgByrGq2vYK1x7tkGbEgcMhoYUEyd-pzUwIzJ2APN0/edit?usp=sharing)
 
 Unity Editor の MenuItem 使用統計を Google Sheets に自動収集するツールです。
 `[StatisticsMenuItem]` 属性を付けるだけで、メニュー項目の実行を自動的にトラッキングできます。
